@@ -3,13 +3,14 @@ FROM node:12-alpine
 WORKDIR /usr/src/app
 
 
-COPY package*.json ./
+COPY . .
 
 # Install app dependencies
-RUN npm install && npm run build
+RUN npm install 
+RUN npm run build
 
 #Copy compiles artifacts
-COPY ./dist ./dist
+COPY ./dist .
 
 EXPOSE 3000
 

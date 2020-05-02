@@ -7,7 +7,7 @@ import { StreetDistance } from "./interfaces/street-distance";
 import { Point } from "./interfaces/point";
 
 const app = express();
-const port = 5003; // default port to listen
+const port = process.env.PORT || 3000; // default port to listen in the event no env variable is set
 app.use(bodyParser.json());
 // define a route handler for the default home page
 app.get("/api/street/closest", async (req, res) => {
