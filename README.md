@@ -1,5 +1,5 @@
 ## Pre-requisites
-  A machine with node >= 10 OR a machine with Docker installed 
+  A machine with NodeJS >= 10 OR a machine with Docker installed 
 ## Getting Started with a machine with Docker
 
 To run project simply paste the following in the terminal `docker-compose up` from the root of this project.
@@ -49,3 +49,8 @@ sample query below
 
 
  `http://localhost:3000/api/street/closest?x=1&y6`
+ 
+ 
+ ## Test
+ 
+ To run tests simply paste the following in your terminal `npm run test`
