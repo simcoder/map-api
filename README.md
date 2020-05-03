@@ -3,7 +3,9 @@
 ## Getting Started with a machine with Docker
 
 to run project simply run `docker-compose up` from the root of this project.
-** my asumption here is that you are runnind Docker for Mac I am not sure if Docker for windows have docker-compose as part of the installation.
+
+
+** I've only tested this with Docker for Mac.. I beleive Docker for Windows should have docker-compose too.
 
 
 ## Getting Started with a machine without Docker
