@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+    map-api:
+        build:
+            context: .
+        restart: always
+        volumes:
+            - ./data/:/usr/src/app/data ## map data from host to container.. this way you easily load you own dataset
+        ports:
+            - 3000:3000

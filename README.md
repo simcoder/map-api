@@ -3,10 +3,8 @@
 ## Getting Started with a machine with Docker
 
 build image
-run `docker build -t map-api .`
+run `docker-compose up` //my asumption here is that you are runnind Docker for Mac I am not sure if Docker for windows have docker-compose as part of the installation.
 
-run image
-run `docker run -p 3000:3000 map-api`
 
 ## Getting Started with a machine without Docker
 
@@ -18,7 +16,13 @@ run `npm run build && npm run start`
 
 ## Data
 
-if you want to run this application with your own dataset you can do so by replacing streets.json file located at "data/streets.json"
+if you want to run this application with your own dataset you can do so by replacing streets.json file located at "data/streets.json" and depending on how to running the application you will need to do the following
+ - if you are running with docker.. you will have to
+	- stock the running containers
+	- replace streets.json localted inside src/data
+ - if you are NOT running with docker you will have tto
+	- kill the application
+	- run `npm run build && npm run start`
 
 
 ## Avaliable endpoints
