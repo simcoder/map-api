@@ -1,11 +1,8 @@
 ## Pre-requisites
-  a machine with node >= 10 OR a machine with Docker installed
+  a machine with node >= 10 OR a machine with Docker installed 
 ## Getting Started with a machine with Docker
 
 to run project simply paste the following in the terminal `docker-compose up` from the root of this project.
-
-
-** I've only tested this with Docker for Mac.. I beleive Docker for Windows as long as docker compose is included as part of the installation.
 
 
 ## Getting Started with a machine without Docker
