@@ -4,7 +4,7 @@ export class LineUtils {
 
     findLineEquation(start:Point, end:Point): LineEq {
        if((start.x === start.y) && (end.y === end.x)){
-           throw "Not a Line";
+           throw new Error("Not a Line");
        }
        const deltaY:number = end.y - start.y;
        const deltaX:number = end.x - start.x;

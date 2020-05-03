@@ -30,7 +30,7 @@ app.get("/api/street", (req, res) => {
 app.post("/api/street", async (req, res) => {
   const street: Street = req.body;
   // cover bad data.. undefined and not a line
-  if ((!street.name || !street.start || !street.end) || 
+  if ((!street.name || !street.start || !street.end) ||
       ((street.start.x === street.start.y) || (street.end.y === street.end.x))
     ) {
     return res.sendStatus(400);

@@ -11,8 +11,8 @@ export class StreetService {
    * @returns {Street[]}
    * @memberof StreetService
    */
-  getAllStreets(): Street[] {
-    const street = fs.readFileSync('./data/streets.json', 'utf8');
+  getAllStreets(path:string='./data/streets.json'): Street[] {
+    const street = fs.readFileSync(path, 'utf8');
     const result: Street[] = [];
     const dd = JSON.parse(street);
     Object.assign(result, dd);
@@ -25,10 +25,13 @@ export class StreetService {
    * @param {Street} street
    * @memberof StreetService
    */
-  createStreet(street:Street):void{
+  createStreet=(street:Street, path:string='./data/streets.json') => {
+    if(!street.name){
+      throw new Error();
+    }
     const streets = this.getAllStreets();
     streets.push(street);
-    fs.writeFileSync('./data/streets.json', JSON.stringify(streets));
+    fs.writeFileSync(path, JSON.stringify(streets));
   }
 
 
@@ -47,7 +50,6 @@ export class StreetService {
       const distance = Math.abs(utl.findDistanceFromPointToLine(point, eq));
       distances.push({ distance, name: street.name });
     });
-    console.log(distances);
     const getDistances = distances.map((x: StreetDistance) => x.distance);
     const closest = Math.min(...getDistances);
     return distances.filter(x => x.distance === closest);
