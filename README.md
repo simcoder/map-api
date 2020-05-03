@@ -24,9 +24,9 @@ If you want to run this application with your own dataset you can do so by repla
 
 ## Avaliable endpoints
 
-- GET (get all street )endpoint at `http://localhost:3000/api/street`
+- GET (get all streets)endpoint at `http://localhost:3000/api/street`
 
-- POST (add streets) endpoint at `http://localhost:3000/api/street` 
+- POST (add a street) endpoint at `http://localhost:3000/api/street` 
    with the following body`
  `{
 	"name":"my awesome street",
