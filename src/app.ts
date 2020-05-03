@@ -9,7 +9,7 @@ import { Point } from "./interfaces/point";
 const app = express();
 const port = process.env.PORT || 3000; // default port to listen in the event no env variable is set
 app.use(bodyParser.json());
-// define a route handler for the default home page
+
 app.get("/api/street/closest", async (req, res) => {
   if (!req.query.x || !req.query.y) {
     return res.sendStatus(400);
