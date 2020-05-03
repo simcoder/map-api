@@ -6,10 +6,9 @@ to run project simply paste the following in the terminal `docker-compose up` fr
 
 
 ## Getting Started with a machine without Docker
+   - Install dependencies by pasting the following into your terminal from the root of the project  `npm install`
 
-	- Install dependencies by pasting the following into your terminal from the root of the project  `npm install`
-
-	- To run the application simply paste the following into your terminal `npm run build && npm run start`
+   - To run the application simply paste the following into your terminal `npm run build && npm run start`
 
 ## Data
 
@@ -20,7 +19,7 @@ If you want to run this application with your own dataset you can do so by repla
 	- Run the following from the terminal `docker-compose up` from the root of the project
  - If you are NOT running with docker you will have to
 	- kill the application
-	- run this from your terminal `npm run build && npm run start` from the root of the project
+	- paste the following into your terminal `npm run build && npm run start` from the root of the project
 
 
 ## Avaliable endpoints
