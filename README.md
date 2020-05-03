@@ -5,7 +5,7 @@
 to run project simply run `docker-compose up` from the root of this project.
 
 
-** I've only tested this with Docker for Mac.. I beleive Docker for Windows should have docker-compose too.
+** I've only tested this with Docker for Mac.. I beleive Docker for Windows as long as docker compose is included as part of the installation.
 
 
 ## Getting Started with a machine without Docker
@@ -13,7 +13,7 @@ to run project simply run `docker-compose up` from the root of this project.
 install dependencies from the root of the project
 run `npm install`
 
-run image
+run application
 run `npm run build && npm run start`
 
 ## Data
@@ -23,7 +23,7 @@ if you want to run this application with your own dataset you can do so by repla
 	- stock the running containers
 	- replace streets.json located inside src/data
 	- run `docker-compose up` from the root of the project
- - if you are NOT running with docker you will have tto
+ - if you are NOT running with docker you will have to
 	- kill the application
 	- run `npm run build && npm run start` from the root of the project
 
