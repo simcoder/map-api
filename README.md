@@ -2,13 +2,13 @@
   a machine with node >= v10 or a machine with Docker installed
 ## Getting Started with a machine with Docker
 
-build image
-run `docker-compose up` //my asumption here is that you are runnind Docker for Mac I am not sure if Docker for windows have docker-compose as part of the installation.
+to run project simply run `docker-compose up` from the root of this project.
+** my asumption here is that you are runnind Docker for Mac I am not sure if Docker for windows have docker-compose as part of the installation.
 
 
 ## Getting Started with a machine without Docker
 
-install dependencies
+install dependencies from the root of the project
 run `npm install`
 
 run image
