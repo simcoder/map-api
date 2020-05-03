@@ -21,10 +21,11 @@ run `npm run build && npm run start`
 if you want to run this application with your own dataset you can do so by replacing streets.json file located at "data/streets.json" and depending on how to running the application you will need to do the following
  - if you are running with docker.. you will have to
 	- stock the running containers
-	- replace streets.json localted inside src/data
+	- replace streets.json located inside src/data
+	- run `docker-compose up` from the root of the project
  - if you are NOT running with docker you will have tto
 	- kill the application
-	- run `npm run build && npm run start`
+	- run `npm run build && npm run start` from the root of the project
 
 
 ## Avaliable endpoints
