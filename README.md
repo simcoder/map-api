@@ -2,7 +2,7 @@
   a machine with node >= v10 or a machine with Docker installed
 ## Getting Started with a machine with Docker
 
-to run project simply run `docker-compose up` from the root of this project.
+to run project simply paste the following in the terminal `docker-compose up` from the root of this project.
 
 
 ** I've only tested this with Docker for Mac.. I beleive Docker for Windows as long as docker compose is included as part of the installation.
@@ -11,10 +11,10 @@ to run project simply run `docker-compose up` from the root of this project.
 ## Getting Started with a machine without Docker
 
 install dependencies from the root of the project
-run `npm install`
+paste the following in the terminal from the project root  `npm install`
 
 run application
-run `npm run build && npm run start`
+paste the following in the terminal from the root of the project `npm run build && npm run start`
 
 ## Data
 
