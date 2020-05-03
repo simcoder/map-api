@@ -1,8 +1,8 @@
 ## Pre-requisites
-  a machine with node >= 10 OR a machine with Docker installed 
+  A machine with node >= 10 OR a machine with Docker installed 
 ## Getting Started with a machine with Docker
 
-to run project simply paste the following in the terminal `docker-compose up` from the root of this project.
+To run project simply paste the following in the terminal `docker-compose up` from the root of this project.
 
 
 ## Getting Started with a machine without Docker
@@ -24,13 +24,11 @@ If you want to run this application with your own dataset you can do so by repla
 
 ## Avaliable endpoints
 
-- gettings all streets 
- paste this in your brower or if you use post man use a GET call `http://localhost:3000/api/street`
+- GET (get all street )endpoint at `http://localhost:3000/api/street`
 
- - adding a street
- you can use something like postman to  POST at `http://localhost:3000/api/street`
- with the following body`
- {
+- POST (add streets) endpoint at `http://localhost:3000/api/street` 
+   with the following body`
+ `{
 	"name":"my awesome street",
 	"start":{
 		"x":-6,
@@ -40,9 +38,10 @@ If you want to run this application with your own dataset you can do so by repla
 		"x":2,
 		"y":3
 	}
-}
- `
+   }`
 
- - finding closest street(s)
-you can paste this to  your browser or use postman you must give it a point of reference to find closest street(s)
+- GET (finding closest street(s)) endpoint at `http://localhost:3000/api/street` with the required parameters
+	- x (x coordinate)
+	- y (y coordinate)
+sample query below
  `http://localhost:3000/api/street/closest?x=1&y6`
