@@ -40,8 +40,12 @@ If you want to run this application with your own dataset you can do so by repla
 	}
    }`
 
-- GET (finding closest street(s)) endpoint at `http://localhost:3000/api/street/closest` with the required parameters
+- GET (finding closest street(s)) endpoint at `http://localhost:3000/api/street/closest` with the required query parameters
 	- x (x coordinate)
 	- y (y coordinate)
+	
+	
 sample query below
+
+
  `http://localhost:3000/api/street/closest?x=1&y6`
