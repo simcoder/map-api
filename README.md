@@ -1,5 +1,5 @@
-## Prereqs
-  a machine with node >= v10 or a machine with Docker installed
+## Pre-requisites
+  a machine with node >= 10 OR a machine with Docker installed
 ## Getting Started with a machine with Docker
 
 to run project simply paste the following in the terminal `docker-compose up` from the root of this project.
@@ -20,12 +20,12 @@ paste the following in the terminal from the root of the project `npm run build 
 
 if you want to run this application with your own dataset you can do so by replacing streets.json file located at "data/streets.json" and depending on how to running the application you will need to do the following
  - if you are running with docker.. you will have to
-	- stock the running containers
+	- if youre application container is running, stop the running container
 	- replace streets.json located inside src/data
 	- run `docker-compose up` from the root of the project
  - if you are NOT running with docker you will have to
 	- kill the application
-	- run `npm run build && npm run start` from the root of the project
+	- run this from your terminal `npm run build && npm run start` from the root of the project
 
 
 ## Avaliable endpoints
