@@ -50,5 +50,5 @@ if you want to run this application with your own dataset you can do so by repla
  `
 
  - finding closest street(s)
-you can past this to  your browser or use postman you must give it a point of reference to find closest street(s)
+you can paste this to  your browser or use postman you must give it a point of reference to find closest street(s)
  `http://localhost:3000/api/street/closest?x=1&y6`
