@@ -60,7 +60,7 @@ export class StreetMock extends StreetService {
     }
     this.streets.push(street);
   };
-  
+
   findClosest(point:Point):StreetDistance[]{
     const distances: StreetDistance[] = [];
     const utl = new LineUtils();

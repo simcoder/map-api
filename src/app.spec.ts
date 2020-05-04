@@ -33,5 +33,5 @@ describe("some-thing", () => {
       })
       .finally(done);
   });
-  //TODO add more
+  // TODO add more
 });

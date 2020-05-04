@@ -1,10 +1,9 @@
 import express from "express";
 import bodyParser from "body-parser";
 import { StreetService } from "./services/street";
-import { LineUtils } from "./utils/lineUtils";
 import { Street } from "./interfaces/street";
-import { StreetDistance } from "./interfaces/street-distance";
 import { Point } from "./interfaces/point";
+import { isPointEqual } from "./utils/pointEqualityUtil";
 
 const app = express();
 const port = process.env.PORT || 3000; // default port to listen in the event no env variable is set
@@ -29,9 +28,9 @@ app.get("/api/street", (req, res) => {
 
 app.post("/api/street", async (req, res) => {
   const street: Street = req.body;
-  // cover bad data.. undefined and not a line
+  // cover bad request.. undefined and not a line
   if ((!street.name || !street.start || !street.end) ||
-      ((street.start.x === street.start.y) || (street.end.y === street.end.x))
+      isPointEqual(street.end, street.start)
     ) {
     return res.sendStatus(400);
   }
