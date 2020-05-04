@@ -7,6 +7,7 @@ COPY . .
 
 # Install app dependencies and build app
 RUN npm install && \
+    npm run test && \
     npm run build
 
 EXPOSE 3000
