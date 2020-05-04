@@ -53,4 +53,6 @@ sample query below
  
  ## Test
  
- To run tests simply paste the following in your terminal `npm run test`
+ 
+ To run tests in your local machines simply paste the following in your terminal `npm run test`
+ To run tests in docker you will need to build a new image.. by running in your terminal `docker-compose up`
