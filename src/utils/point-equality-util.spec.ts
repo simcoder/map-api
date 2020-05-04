@@ -1,4 +1,4 @@
-import { isPointEqual } from "./pointEqualityUtil";
+import { isPointEqual } from "./point-equality-util";
 
 describe("Point Equality Tests", () => {
     it("it should call isPointEqual with 2 identitcal points and return true", () => {

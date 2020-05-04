@@ -1,6 +1,6 @@
 import { Street } from "../interfaces/street";
 import * as fs from "fs";
-import { LineUtils } from "../utils/lineUtils";
+import { LineUtils } from "../utils/line-utils";
 import { Point } from "../interfaces/point";
 import { StreetDistance } from "../interfaces/street-distance";
 

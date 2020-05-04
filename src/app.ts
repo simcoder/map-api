@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import { StreetService } from "./services/street";
 import { Street } from "./interfaces/street";
 import { Point } from "./interfaces/point";
-import { isPointEqual } from "./utils/pointEqualityUtil";
+import { isPointEqual } from "./utils/point-equality-util";
 
 const app = express();
 const port = process.env.PORT || 3000; // default port to listen in the event no env variable is set

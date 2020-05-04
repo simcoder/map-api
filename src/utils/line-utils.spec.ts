@@ -1,4 +1,4 @@
-import { LineUtils } from "./lineUtils";
+import { LineUtils } from "./line-utils";
 
 let utils: LineUtils;
 beforeEach(() => {

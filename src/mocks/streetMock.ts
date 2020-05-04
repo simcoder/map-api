@@ -1,7 +1,7 @@
 import { StreetService } from "../services/street";
 import { Street } from "../interfaces/street";
 import { StreetDistance } from "../interfaces/street-distance";
-import { LineUtils } from "../utils/lineUtils";
+import { LineUtils } from "../utils/line-utils";
 import { Point } from "../interfaces/point";
 
 export class StreetMock extends StreetService {
